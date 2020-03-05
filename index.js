@@ -24,9 +24,7 @@ body.style.backgroundImage = "url('rsz_earth.v1.png')";
         function drawBall() {
           c.beginPath();
           c.arc(x, y, 20, 0, Math.PI * 2);
-          c.fillStyle = "#ffdc34";
-          c.shadowBlur = 20;
-          c.shadowColor = "#ffdc34";
+          c.fillStyle = "orange";
           c.shadowBlur = 60;
           c.shadowColor = "orange";
           c.fill();
@@ -37,6 +35,8 @@ body.style.backgroundImage = "url('rsz_earth.v1.png')";
           c.beginPath();
           c.rect(paddleX, canvas.height - paddleH, paddleW, paddleH);
           c.fillStyle = "#05dfd7";
+          c.shadowColor="#05dfd7"; 
+          c.shadowBlur=50;
           c.fill();
           c.closePath();
         }
