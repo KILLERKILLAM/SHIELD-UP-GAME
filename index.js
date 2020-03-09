@@ -20,12 +20,12 @@ body.style.backgroundImage = "url('rsz_earth.v1.png')";
             paddleX = relativeX - paddleW/2;
           }
         });
-//         addEventListener("touchmove", function(e) {
-//           var relativeX = e.clientX - canvas.offsetLeft;
-//           if(relativeX > 0 && relativeX < canvas.width) {
-//             paddleX = relativeX - paddleW/2;
-//           }
-//         });
+        addEventListener("touchmove", function(e) {
+          var relativeX = e.clientX - canvas.offsetLeft;
+          if(relativeX > 0 && relativeX < canvas.width) {
+            paddleX = relativeX - paddleW/2;
+          }
+        });
 
         function drawBall() {
           c.beginPath();
