@@ -5,5 +5,5 @@ body{
   background-repeat: no-repeat;
   height: auto;
   background-position: center;
-  
+  background-attachment: fixed;
 }
